@@ -12,8 +12,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/movies/{id}', [MovieController::class, 'show']);
     Route::get('/directors/{id}', [DirectorController::class, 'show']);
     Route::get('/actors/{id}', [ActorController::class, 'show']);
-    Route::get('/movies/genres', [MovieController::class, 'moviesByGenre']);
-    Route::get('/movies/ratings', [MovieController::class, 'moviesByRating']);
+    Route::get('/movies/genres', [MovieController::class, 'moviesByGenre']); //needs fixing
+    Route::get('/movies/ratings', [MovieController::class, 'moviesByRating']); //needs fixing
 });
 
 
